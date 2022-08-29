@@ -1,0 +1,419 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+        url("fonts/Montserrat-VariableFont_wght.ttf");
+        
+}
+
+body {
+  width:1400px;
+  padding:0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:  #E5E5E5;
+  
+}
+
+h1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 50px;
+  line-height: 62px;
+  color: #533738;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #533738;
+  text-align: center;
+  margin:0;
+  padding-top: 0.83em;
+  padding-bottom: 0.83em;
+}
+
+p {
+    margin: 25px 0;
+}
+
+ a {
+  text-decoration: none; /* Убираем подчёркивание */
+  color: #533738;
+}
+
+.marathon {
+  display: grid;
+  grid-template-rows: auto auto 104px;
+  background:#EFE6E4 url(img/back_ground_main.png) no-repeat center top; 
+}
+
+/*HEADER-----------------------------*/
+
+.site-header{  
+  display:grid;
+  grid-template-columns: 25px 155px auto;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Arial", sans-serif;
+  color: #222222;
+  padding-top:40px;
+  padding-right: 36px;
+  padding-left: 36px;
+}
+
+.navigation {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+  
+
+
+/*Главная страница-----------------------*/
+
+.main_page {
+  width:540px;
+  padding-top: 50px;
+  padding-left: 140px;
+  padding-bottom: 168px;
+}
+
+
+
+
+
+
+/*О НАС ABOUT US--------------------------*/
+
+
+.about-us {
+  display: grid;
+  grid-template-columns:auto auto ;
+  grid-template-rows: 40px auto 273px;
+  row-gap:  40px;
+  column-gap: 64px;
+  grid-template-areas: "h2 h2"
+                       "vase text"
+                       "progress progress";
+}
+
+.about-us-h2 {
+  grid-area: h2;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.about-us-text {
+  grid-area: text;
+  background-color: #EFE6E4;
+  margin-right: 182px;
+}
+
+.about-us-vase {
+  grid-area: vase;
+  background-color: #EFE6E4;
+  margin-left: 182px;
+}
+
+.progress {
+  grid-area: progress;
+  background-color: #8D7370;
+  margin-left: 0;
+  margin-right: 0;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+
+
+
+
+
+
+/*НАШИ РАБОТЫ WORK----------------------------*/
+
+.work {
+  display: grid;
+  margin-left: 100px;
+  margin-left: 100px;
+}
+
+.work-content {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 30px;
+  margin-right: 0;
+  margin-left: 0;
+  box-sizing: border-box;
+}
+
+.work-hover {
+  position: relative;
+}
+.work-hover p {
+  display: none;
+}
+
+.work-hover:hover p{
+  display:block;
+  background-color:  rgba(100, 72, 69, 0.8);
+  color:  #FFFFFF;
+  width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+  box-sizing: border-box;
+  padding: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-hover {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.work-button {
+  align-self: center;
+  vertical-align:center;
+  justify-self: center;
+  margin-top: 40px;
+  margin-bottom: 65px;
+  background-color:#EFE6E4;
+  text-align: center;
+  cursor: pointer;
+  border:none;
+  display: flex;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.work-button:hover {
+  transform: scale(1.2);
+}
+
+.img-button-work {
+  align-self: center;
+  vertical-align:center;
+  vertical-align:center;
+  justify-self: center;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+/*КОМАНДА TEAM-----------------------------*/
+
+.team {
+text-align: center;
+background: #E2C4BA;
+}
+
+.team-content {
+  display: grid;
+  grid-area: team;
+  text-align: start;
+  grid-template-columns: 320px 320px 320px;
+  align-items: flex-start;
+  justify-content: center;
+  column-gap: 34px;
+  row-gap: 20px;
+  grid-template-areas:"masha sasha kate";
+}
+
+.Masha {
+  display: grid;
+  grid-area: masha;
+}
+
+.Sasha {
+  display: grid;
+  grid-area: sasha;
+}
+
+
+.Kate {
+  display: grid;
+  grid-area: kate;
+}
+
+
+
+
+
+/* КАК МЫ РАБОТАЕМ HOW WORK----------------------*/
+
+.how-work {
+  background: #E2C4BA; 
+}
+
+.how-work  ol {
+  list-style: none;
+  counter-reset: item;
+  display: flex; 
+  
+}
+
+.how-work li {
+  counter-increment: item;
+  margin-bottom: 50px;
+  text-align: center;
+  min-width: 240px;
+  background: #E2C4BA; 
+ 
+}
+.how-work  li:before {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  content: counter(item);
+  background: #8D7370;
+  font-size: 30px;
+  line-height: 70px;
+  border-radius: 100%;
+  color: white;
+  width: 70px;
+  height:70px;
+  text-align: center;
+}
+
+
+
+
+
+
+/*ОТЗЫВЫ REVIEWS---------------------------------*/
+
+.reviews-content {
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: 100px 1fr 1fr 100px;
+  align-items: center;
+  justify-items: center;
+  margin-left: 182px;
+  margin-right: 182px;
+  margin-bottom: 65px;
+}
+
+.reviews-text {
+  margin-left: 0;
+  margin-right:0;
+  grid-column: 2/2;
+  justify-content: center;
+}
+  
+.reviews-img {
+  display: grid;
+  grid-column: 3/3;
+  row-gap: 10px;
+}  
+  
+.reviews-button {
+  background: none;
+  border: 0;
+}
+
+.reviews-button:hover {
+  transform: scale(1.2);
+}
+.reviews-button-right{
+  grid-column: 4/4;
+}
+   
+.reviews-button-left {
+  grid-column: 1/1;
+}    
+    
+
+
+  
+
+
+
+/*REQUEST ОТЗЫВЫ---------------------------------*/
+
+.request {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color:  #8D7370;
+  color: #FFFFFF;
+}
+
+.request-h2 {
+  margin: 0;
+  text-align: start;
+  color: #FFFFFF;
+}
+
+.request-content {
+  margin-left: 182px;
+  padding: 20px;
+}
+
+.button-request {
+  padding: 20px 65px;
+  background-color: #CC8B86;
+  border: none;
+}
+
+.button-request:hover {
+  transform: scale(1.05);
+  color:#E2C4BA
+}
+
+.request-form {
+  background-color: none;
+}
+
+.request-form input {
+  background-color:  #8D7370;
+  border:none;
+}
+
+/*FOOTER-----------------------------------------*/
+
+.footer-page {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-address {
+  font-style: normal;
+}
+
+.phone {
+  margin-right: 42px;
+}
+
+.IP {
+  margin-left: 380px;  
+}
