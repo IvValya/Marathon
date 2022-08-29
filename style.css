@@ -51,7 +51,7 @@ p {
 .marathon {
   display: grid;
   grid-template-rows: auto auto 104px;
-  background:#EFE6E4 url(img/back_ground_main.png) no-repeat center top; 
+  background:#EFE6E4 url(img/back_ground_main.jpg) no-repeat center top; 
 }
 
 /*HEADER-----------------------------*/
